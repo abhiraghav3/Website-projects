@@ -1,0 +1,35 @@
+#navbar {
+    flex-direction: column
+}
+
+#navbar ul li a {
+    font-size: 20px;
+}
+
+#navbar ul li {
+    padding: 0px;
+    margin: 1em;
+}
+
+#navbar::before {
+    height: 160%;
+}
+
+.home {
+    margin: 7em 2em;
+    font-size: 12px;
+}
+
+.about {
+    margin: 7em 2em;
+    font-size: 12px;
+}
+
+.Details {
+    margin: 7em 2em;
+    font-size: 12px;
+}
+
+#contact {
+    font-size: 12px;
+}
