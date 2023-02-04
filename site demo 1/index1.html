@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* CSS Variables  */
+        
+         :root {
+            --navbar-height: 59px;
+        }
+        /* NAVIGATION BAR  */
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+        /* NAVIGATION BAR: LOGO And Image  */
+        
+        #logo {
+            height: 127px;
+            margin: 0px 9px;
+        }
+        
+        #logo img {
+            width: 84px;
+            height: 123px;
+            margin: 4px;
+        }
+        /* NAVIGATION BAR: LIST Styling  */
+        
+        #navbar {
+            position: relative;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: rgb(19, 1, 1);
+            background-color: white;
+        }
+        /* HOME SECTION  */
+        
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 221px;
+            justify-content: baseline;
+            align-items: center;
+            height: 365px;
+        }
+        
+        #home::before {
+            content: "";
+            background: url(/ladybug_chameleon-wide.jpg);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 70%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        
+        #home h1 {
+            color: white;
+            text-align: center;
+        }
+        
+        #home p {
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* SERVices SECTION  */
+        
+        .services-container {
+            margin: 5px 45px
+        }
+        
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+        
+        #services .box {
+            border: 2px solid rgb(69, 196, 10);
+            padding: 20px;
+            margin: 0px 6px;
+            border-radius: 20px;
+            background-color: #80b77c;
+            ;
+        }
+        
+        #services .box img {
+            height: 150px;
+            margin: auto;
+            display: block;
+        }
+        /* Utility Class  */
+        
+        .hprimary {
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+        
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+        
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: rgb(52, 194, 52);
+            color: white;
+            margin: 17px 17px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .center {
+            padding: 12px 73px;
+            text-align: center;
+        }
+    </style>>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/a.png " alt="myonlinemeal.com">
+        </div>
+        <ul>
+            <li class="item">
+                <a href="#">Home</a></li>
+            <li class="item">
+                <a href="#">Services</a></li>
+            <li class="item">
+                <a href="#">about Us</a></li>
+            <li class="item">
+                <a href="#">contact us</a></li>
+
+        </ul>
+
+    </nav>
+    <section id="home">
+        <h1 class="hprimary">Welcome to my online meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni incidunt quo odit! Ad tenetur ut in facilis, corrupti alias, a</p>
+        <button class="btn">order now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">
+            Our services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="/lemon_water_splash-wallpaper-1920x1080.jpg" alt="">
+                <h2 class="h-secondary center">
+                    Food ordering
+                </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloribus hic distinctio sapiente nesciunt voluptas cum atque incidunt culpa, esse repudiandae, magnam nisi sint deserunt quia. Quod placeat necessitatibus aspernatur nihil
+                    explicabo fuga animi?</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
