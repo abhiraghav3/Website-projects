@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Fitness</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(/img/bg.jpg);
+        }
+        
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+        
+        .left img {
+            filter: invert(100%);
+            width: 112px;
+        }
+        
+        .mid {
+            margin: 20px auto;
+            width: 630px;
+        }
+        
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 28px;
+            right: 4px;
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 23px 30px;
+        }
+        
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(195, 195, 207);
+        }
+        
+        .btn {
+            margin: 11px 2px;
+            background-color: rgb(165 201 191);
+            padding: 0px 10px;
+            border: 2px solid grey;
+            border-radius: 22px 7px;
+            cursor: pointer
+        }
+        
+        .btn:hover {
+            color: honeydew;
+            background-color: rgb(185, 225, 245)
+        }
+        
+        .container {
+            border: 2px solid #3a3636;
+            margin: 105px 19px;
+            padding: 24px 25px;
+            width: 40%;
+            border-radius: 25px;
+        }
+        
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 76%;
+            padding: 7px 1px;
+            margin: 4px auto;
+            font-size: 12px;
+            border-radius: 27px;
+        }
+        
+        .container {
+            text-align: center;
+            position: absolute
+        }
+        
+        .box {
+            position: absolute;
+            top: 33%;
+            left: 49%
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="left"><img src="img/logo.png" alt="">
+            <div>Abhishek Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="#">fitness</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="right"><button class="btn">Call Us Now</button><button class="btn">Email us</button></div>
+    </header>
+    <div class="container">
+        <h1>Join the Best gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+    <div class="box" id="img"><img src="/img/ImperturbableGoodGyrfalcon-size_restricted.gif" alt=""></div>
+</body>
+
+</html>
