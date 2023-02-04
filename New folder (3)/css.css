@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar */
+
+#navbar {
+    top: 24px;
+left: 230px;
+width: 1460px;
+height: 42px;
+/* UI Properties */
+opacity: 1;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar img {
+    width: 5em;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 1em;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    margin: 1em;
+    font-size: 24px;
+    color: white;
+}
+
+
+/* home */
+
+#Home {
+    text-align: center;
+    padding: 1em 7em;
+    margin: 2em 3em;
+    font-size: 30px;
+}
+
+#Home::before {
+    content: "";
+    background: url(/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#Home h1,
+p {
+    color: white;
+}
+
+#bt1 {
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: brown;
+    padding: 1em 4em;
+    font-size: 14px;
+}
+
+
+/* #services */
+
+.box img {
+    width: 10em;
+}
+
+#services-container .box {
+    border: 2px solid red;
+    background: rgb(226, 195, 70);
+    border-radius: 2px;
+    height: 333px;
+    width: 152px;
+    padding: 2em 4em;
+    margin: 2em 1em;
+}
+
+#services-h {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 3em;
+}
+
+#services-container {
+    text-align: center;
+    display: flex;
+    margin: 1em 10em;
+    padding: 2em 3em;
+}
+
+#clients-h {
+    text-align: center;
+    font-size: 5em;
+}
+
+#logo img {
+    width: 9em;
+    margin: 0em 6em;
+}
+
+#logo {
+    display: flex;
+    background: url(/bg.jpg) no-repeat center center/cover;
+    opacity: 0.7;
+}
+
+Footer {
+    text-align: center;
+}
